@@ -1236,6 +1236,13 @@ button, input, select, textarea {
         margin-bottom: 24px;
     }
     
+    /* Mobile header improvements */
+    .navbar,
+    .navbar.scrolled {
+        box-shadow: none !important; /* Remove dark shadow overlay to prevent horizontal lines */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Extremely soft luxury border */
+    }
+    
     /* Cards layout */
     .collection-grid {
         grid-template-columns: 1fr;
