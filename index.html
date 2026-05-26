@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloom Bouquet Hub - Premium customized bouquets. Flower, chocolate, and money bouquets crafted with love. Book your aesthetic bouquet today.">
+    <title>Bloom Bouquet Hub | Custom Floral Boutiques</title>
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader / Loading Animation -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-wrapper">
+            <div class="flower-spinner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <p class="preloader-text">Bloom Bouquet Hub</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="brand-logo-icon" style="margin-right: 8px; font-size: 1.2rem;">🌸</span>
+                <span class="brand-title">BBH</span>
+            </a>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <a href="#booking" class="btn btn-nav">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-split-container">
+            <div class="hero-text-panel">
+                <!-- Floating Decorative Elements -->
+                <div class="floating-petals">
+                    <div class="petal-float p1" style="left: 10%; top: 15%;">🌸</div>
+                    <div class="petal-float p2" style="right: 15%; top: 25%;">✨</div>
+                </div>
+                
+                <span class="hero-mini-title">Bloom Bouquet Hub</span>
+                <h1 class="hero-title">Creative &bull; Customized &bull; Made With Love</h1>
+                <p class="hero-desc">Bespoke handcrafted floral, chocolate, and money bouquets designed precisely for your special celebrations. Locally curated in Kadapa.</p>
+                
+                <div class="hero-cta">
+                    <a href="#collection" class="btn btn-primary">Our Bouquets <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-panel" style="background-image: url('assets/hero.png');"></div>
+        </div>
+    </section>
+
+    <!-- Bouquet Collection Section -->
+    <section class="collection section-padding" id="collection">
+        <div class="container">
+            <div class="text-center mb-80">
+                <span class="section-subtitle">Our Selection</span>
+                <h2 class="section-title">Aesthetic Bouquets</h2>
+                <p class="section-desc">Hand-crafted customized creations tailored exactly to your style and occasion.</p>
+            </div>
+            
+            <div class="collection-grid">
+                <!-- Card 1: Flower Bouquets -->
+                <div class="collection-card glass-card" data-category="Flower Bouquets" data-price="From ₹200" data-desc="Timeless, elegant, and romantic. Choose from premium fresh blush pink roses, pastel peonies, cream flowers, and wild pampas in custom nudes and ivory wraps." data-image="assets/roses.png">
+                    <div class="card-img-wrapper">
+                        <img src="assets/roses.png" alt="Flower Bouquets" class="card-img">
+                        <div class="card-overlay">
+                            <button class="btn btn-secondary btn-sm quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-title">Flower Bouquets</h3>
+                        <p class="card-subtitle">Fresh premium grade roses & peonies</p>
+                        <div class="card-footer">
+                            <span class="card-price">From ₹200</span>
+                            <a href="#booking" class="card-link select-bouquet-btn" data-type="Flower Bouquets">Book Now <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Chocolate Bouquets -->
+                <div class="collection-card glass-card" data-category="Chocolate Bouquets" data-price="From ₹300" data-desc="The ultimate sweet indulgence. Premium Ferrero Rocher, Lindt, or Hershey's chocolates beautifully designed with fresh floral fillers and silk ribbons." data-image="assets/chocolates.png">
+                    <div class="card-img-wrapper">
+                        <img src="assets/chocolates.png" alt="Chocolate Bouquets" class="card-img">
+                        <div class="card-overlay">
+                            <button class="btn btn-secondary btn-sm quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-title">Chocolate Bouquets</h3>
+                        <p class="card-subtitle">Premium Ferrero Rocher combinations</p>
+                        <div class="card-footer">
+                            <span class="card-price">From ₹300</span>
+                            <a href="#booking" class="card-link select-bouquet-btn" data-type="Chocolate Bouquets">Book Now <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Money Bouquets -->
+                <div class="collection-card glass-card" data-category="Money Bouquets" data-price="From ₹500" data-desc="An impressive and elegant gift. Artfully folded banknotes designed into custom flowers, bordered by baby's breath and premium wraps." data-image="assets/money.png">
+                    <div class="card-img-wrapper">
+                        <img src="assets/money.png" alt="Money Bouquets" class="card-img">
+                        <div class="card-overlay">
+                            <button class="btn btn-secondary btn-sm quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-title">Money Bouquets</h3>
+                        <p class="card-subtitle">Aesthetic folded banknote designs</p>
+                        <div class="card-footer">
+                            <span class="card-price">From ₹500</span>
+                            <a href="#booking" class="card-link select-bouquet-btn" data-type="Money Bouquets">Book Now <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content glass-card">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-img-wrapper">
+                    <img src="" alt="Bouquet Preview" id="modalImg" class="modal-img">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalCategory" class="modal-category-title">Flower Bouquets</h3>
+                    <div class="modal-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.9/5 stars)</span>
+                    </div>
+                    <p id="modalPrice" class="modal-price">₹200.00</p>
+                    <p id="modalDesc" class="modal-description">Detailed description here...</p>
+                    
+                    <div class="modal-customizations">
+                        <div class="custom-item">
+                            <i class="fa-solid fa-circle-check"></i> 100% Hand-Wrapped
+                        </div>
+                        <div class="custom-item">
+                            <i class="fa-solid fa-circle-check"></i> Customized Colors & Wrap
+                        </div>
+                    </div>
+
+                    <a href="#booking" class="btn btn-primary select-bouquet-btn-modal" id="modalBookBtn">Book This Bouquet <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Bouquet Booking Form Section -->
+    <section class="booking-section section-padding" id="booking">
+        <div class="container">
+            <div class="text-center mb-80">
+                <span class="section-subtitle">Reserve Yours</span>
+                <h2 class="section-title">Custom Booking Form</h2>
+                <p class="section-desc">Fill out your preferred selections below. We will save details and design it exactly to your style, occasion, and budget.</p>
+            </div>
+            
+            <div class="booking-form-wrapper">
+                <div class="booking-form-container glass-card">
+                    <form id="bouquetBookingForm" novalidate>
+                        <!-- Form Header for Status Message -->
+                        <div class="form-status-msg" id="formStatusMsg"></div>
+                        
+                        <div class="form-row-2">
+                            <!-- Customer Name -->
+                            <div class="input-group">
+                                <input type="text" id="customerName" name="customerName" placeholder=" " required autocomplete="name">
+                                <label for="customerName">Your Full Name *</label>
+                                <span class="error-msg">Please enter your name</span>
+                            </div>
+                            
+                            <!-- Phone Number -->
+                            <div class="input-group">
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder=" " required autocomplete="tel">
+                                <label for="phoneNumber">Phone Number *</label>
+                                <span class="error-msg">Please enter your phone number</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <!-- Occasion -->
+                            <div class="input-group">
+                                <input type="text" id="occasion" name="occasion" placeholder=" " required>
+                                <label for="occasion">Occasion (e.g., Birthday, Anniversary) *</label>
+                                <span class="error-msg">Please state the occasion</span>
+                            </div>
+                            
+                            <!-- Bouquet Type Dropdown -->
+                            <div class="input-group">
+                                <select id="bouquetType" name="bouquetType" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Flower Bouquets">Flower Bouquets</option>
+                                    <option value="Chocolate Bouquets">Chocolate Bouquets</option>
+                                    <option value="Money Bouquets">Money Bouquets</option>
+                                </select>
+                                <label for="bouquetType" class="select-label">Bouquet Category *</label>
+                                <span class="error-msg">Please select a category</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row-1">
+                            <!-- Preferred Colors -->
+                            <div class="input-group">
+                                <input type="text" id="preferredColors" name="preferredColors" placeholder=" " required>
+                                <label for="preferredColors">Preferred Colors (e.g., Pastel Pink) *</label>
+                                <span class="error-msg">Please enter preferred colors</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row-1">
+                            <!-- Delivery Date -->
+                            <div class="input-group">
+                                <input type="date" id="deliveryDate" name="deliveryDate" required>
+                                <label for="deliveryDate" class="date-label">Preferred Delivery Date *</label>
+                                <span class="error-msg">Please pick a delivery date</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row-1">
+                            <!-- Delivery Address -->
+                            <div class="input-group">
+                                <textarea id="deliveryAddress" name="deliveryAddress" placeholder=" " required rows="2"></textarea>
+                                <label for="deliveryAddress">Delivery Address *</label>
+                                <span class="error-msg">Please enter delivery address</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row-1">
+                            <!-- Special Notes -->
+                            <div class="input-group">
+                                <textarea id="specialNotes" name="specialNotes" placeholder=" " rows="2"></textarea>
+                                <label for="specialNotes">Special Request / Card Note Message</label>
+                            </div>
+                        </div>
+
+                        <!-- Upload Inspiration Image -->
+                        <div class="form-row-1">
+                            <div class="file-upload-wrapper" id="fileUploadWrapper">
+                                <div class="file-upload-label">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <span>Upload Inspiration Image (Optional)</span>
+                                    <p class="file-hint">Select a photo from Pinterest or Instagram</p>
+                                </div>
+                                <input type="file" id="inspirationImage" name="inspirationImage" accept="image/*">
+                                <div class="file-preview-container" id="filePreviewContainer">
+                                    <img src="" alt="Inspiration Preview" id="filePreview">
+                                    <button type="button" class="remove-preview-btn" id="removePreviewBtn"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden fields to capture image URL or base64 data -->
+                        <input type="hidden" id="inspirationImageBase64" name="inspirationImageBase64">
+                        <input type="hidden" id="inspirationImageName" name="inspirationImageName">
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBookingBtn">
+                            <span class="btn-text">Book Your Bouquet <i class="fa-solid fa-heart"></i></span>
+                            <span class="btn-loading"><i class="fa-solid fa-spinner fa-spin"></i> Submitting...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Popup / Modal -->
+    <div class="modal success-modal" id="successModal">
+        <div class="success-modal-content glass-card text-center">
+            <div class="success-icon">🌸</div>
+            <h3>Your bouquet booking has been received 🌸</h3>
+            <p>Thank you for choosing Bloom Bouquet Hub. Our designer florist is reviewing your details and will connect with you via WhatsApp or Phone shortly to confirm order and payment details.</p>
+            <button class="btn btn-primary" id="closeSuccessBtn">Wonderful, Thank You!</button>
+        </div>
+    </div>
+
+    <!-- Contact & Store Info Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="text-center mb-80">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Our Florists</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Info Cards -->
+                <div class="contact-info-panel">
+                    <div class="contact-card glass-card">
+                        <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+                        <div>
+                            <h4>Instagram DMs</h4>
+                            <p>Follow our visual flower diaries</p>
+                            <a href="https://instagram.com" target="_blank" class="contact-link">@BloomBouquetHub <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp Instant Booking</h4>
+                            <p>Direct chat for urgent setups</p>
+                            <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20book%20a%20bouquet" target="_blank" class="contact-link">Chat +1 234 567 890 <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards row 2 -->
+                <div class="contact-info-panel">
+                    <div class="contact-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Contact</h4>
+                            <p>For custom proposals & events</p>
+                            <a href="mailto:bloombouquethub4@gmail.com" class="contact-link">bloombouquethub4@gmail.com <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Boutique Studio</h4>
+                            <p>Hours: Mon - Sat (9am - 8pm)</p>
+                            <span class="contact-static-text">GanjiKunta Colony, Kadapa 516002</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h3>Bloom Bouquet Hub</h3>
+            <p class="footer-tagline">Creative • Customized • Made With Love</p>
+            <div class="footer-divider"></div>
+            <p class="copyright">&copy; 2026 Bloom Bouquet Hub. All rights reserved. Crafted for beautiful celebrations.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
